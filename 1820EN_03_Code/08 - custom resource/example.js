@@ -1,7 +1,7 @@
 angular.module('customResourceDemo', ['mongolabResource'])
   .constant('MONGOLAB_CONFIG', {
-    DB_NAME: 'ascrum',
-    API_KEY: '4fb51e55e4b02e56a67b0b66'
+    DB_NAME: 'angulardb',
+    API_KEY: 'CGZXjEE8xwU-JwaIjJU5rkcbKsjQKi33'
   })
 
   .factory('Users', function (mongolabResource) {
@@ -23,7 +23,7 @@ angular.module('customResourceDemo', ['mongolabResource'])
     });
 
     $scope.addSuperhero = function () {
-      new Users({name: 'Superhero'}).$save();
+      new Users({name: 'pinost'}).$save();
     };
   });
 

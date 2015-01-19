@@ -8,7 +8,7 @@
 <body ng-app="repeatOverObjectApp" ng-controller="RepeatOverObjectCtrl">
 
 <ul>
-    <li ng-repeat="(key, value) in dataAsObj">{{key}} => {{value}}</li>
+    <li ng-repeat="(key, value) in dataAsObj">{{$index}} {{key}} => {{value}}</li>
 </ul>
 
 </body>

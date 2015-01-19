@@ -1,7 +1,7 @@
 angular.module('resource', ['ngResource'])
   .factory('Users', function ($resource) {
-    var Users = $resource('https://api.mongolab.com/api/1/databases/ascrum/collections/users/:id', {
-      apiKey:'4fb51e55e4b02e56a67b0b66',
+    var Users = $resource('https://api.mongolab.com/api/1/databases/angulardb/collections/users/:id', {
+      apiKey:'CGZXjEE8xwU-JwaIjJU5rkcbKsjQKi33',
       id:'@_id.$oid'
     });
 

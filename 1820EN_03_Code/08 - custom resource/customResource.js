@@ -24,7 +24,7 @@ angular.module('mongolabResource', [])
 
       Resource.query = function (params) {
         return $http.get(collectionUrl, {
-          params:angular.extend({q:JSON.stringify({} || params)}, defaultParams)
+          params:angular.extend({q:JSON.stringify(params)}, defaultParams)
         }).then(function (response) {
             var result = [];
             angular.forEach(response.data, function (value, key) {

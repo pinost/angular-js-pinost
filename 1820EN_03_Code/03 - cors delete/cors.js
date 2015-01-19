@@ -4,12 +4,12 @@ angular.module('cors', [])
 
     $scope.deleteUser = function () {
 
-      var userId = 'userid';
+      var userId = 'user';
 
-      $http['delete']('https://api.mongolab.com/api/1/databases/ascrum/collections/users/' + userId,
+      $http['delete']('https://api.mongolab.com/api/1/databases/angulardb/collections/users/' + userId,
         {
           params:{
-            apiKey:'4fb51e55e4b02e56a67b0b66'
+            apiKey:'CGZXjEE8xwU-JwaIjJU5rkcbKsjQKi33'
           }
         }
       );
